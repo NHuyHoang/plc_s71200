@@ -1,267 +1,269 @@
 <!DOCTYPE html>
- <html lang="en">
- 
- <head>
+<html lang="en">
+
+<head>
   <meta charset="utf-8">
   <title>Greenhouse</title>
-  
- </head>
- <body>
-<h1>GREENHOUSE</h1>
-<h2>SCREEN</h2>
-<input type="text" id="ptag" />
-<button onclick="navigate()">Navigate</button>
-<fieldset>
-  <legend>System</legend>
-<!-- AWP_In_Variable Name='"M_START"' -->
-<form>
-    <p>
-    <input type="submit" onclick="batden1()" value="START">
-    <input type="hidden" name='"M_START"' value ="1">
-    <input type="hidden" name='"M_START"' value ="0">
-    </p>
-</form>
-<!-- AWP_In_Variable Name='"M_STOP"' -->
-<form>
-  <p>
-    <input type="submit" value="STOP">
-    <input type="hidden" name='"M_STOP"' value ="1">
-    <input type="hidden" name='"M_STOP"' value ="0">
-  </p>
-</form>
-<!-- AWP_In_Variable Name='"M_E_STOP"' -->
-<form>
-  <p>
-    <input type="submit" value="EMERGENCY STOP">
-    <input type="hidden" name='"M_E_STOP"' value ="1">
-  </p>
-</form>
-<form>
-  <p>
-    <input type="submit" value="RESET EMERGENCY STOP">
-    <input type="hidden" name='"M_E_STOP"' value ="0">
-  </p>
-</form>
-</fieldset>
-<fieldset>
-  <legend>Mode</legend>
-<!-- AWP_In_Variable Name='"M_MANU"' -->
-<form>
-  <p>
-    <input type="submit" value="AUTO">
-    <input type="hidden" name='"M_MANU"' value ="0">
-  </p>
-</form>
-<form>
-  <p>
-    <input type="submit" value="MANUAL">
-    <input type="hidden" name='"M_MANU"' value ="1">
-  </p>
-</form>
-</fieldset>
-<fieldset>
-  <legend>Manual</legend>
-<!-- AWP_In_Variable Name='"M_MANU_DONG_K0"' -->
-<!-- AWP_In_Variable Name='"M_MANU_MO_K0"' -->
-Light
-<form>
-  <p>
-    <input type="submit" value="START">
-    <input type="hidden" name='"M_MANU_DONG_K0"' value ="1">
-    <input type="hidden" name='"M_MANU_MO_K0"' value ="0">
-  </p>
-</form>
-<form>
-  <p>
-    <input type="submit" value="STOP">
-    <input type="hidden" name='"M_MANU_MO_K0"' value ="1">
-    <input type="hidden" name='"M_MANU_DONG_K0"' value ="0">
-  </p>
-</form>
-<!-- AWP_In_Variable Name='"M_MANU_DONG_K1"' -->
-<!-- AWP_In_Variable Name='"M_MANU_MO_K1"' -->
-<br> Fog System
-<form>
-  <p>
-    <input type="submit" value="START">
-    <input type="hidden" name='"M_MANU_DONG_K1"' value ="1">
-    <input type="hidden" name='"M_MANU_MO_K1"' value ="0">
-  </p>
-</form>
-<form>
-  <p>
-    <input type="submit" value="STOP">
-    <input type="hidden" name='"M_MANU_MO_K1"' value ="1">
-    <input type="hidden" name='"M_MANU_DONG_K1"' value ="0">
-  </p>
-</form>
-<!-- AWP_In_Variable Name='"M_MANU_DONG_K2"' -->
-<br> Close sunblock netting system
-<form>
-  <p>
-    <input type="submit" value="CW MOTOR">
-    <input type="hidden" name='"M_MANU_DONG_K2"' value ="1">
-    <input type="hidden" name='"M_MANU_DONG_K2"' value ="0">
-  </p>
-</form>
-<!-- AWP_In_Variable Name='"M_MANU_DONG_K3"' -->  
-<br> Open sunblock netting system
-<form>
-  <p>
-    <input type="submit" value="CCW MOTOR">
-    <input type="hidden" name='"M_MANU_DONG_K3"' value ="1">
-    <input type="hidden" name='"M_MANU_DONG_K3"' value ="0">
-  </p>
-</form>
-<!-- AWP_In_Variable Name='"M_MANU_DONG_K4"' -->
-<!-- AWP_In_Variable Name='"M_MANU_MO_K4"' -->
-<br> Ventilation Door And Fan
-<form>
-  <p>
-    <input type="submit" value="START">
-    <input type="hidden" name='"M_MANU_DONG_K4"' value ="1">
-    <input type="hidden" name='"M_MANU_MO_K4"' value ="0">
-  </p>
-</form>
-<form>
-  <p>
-    <input type="submit" value="STOP">
-    <input type="hidden" name='"M_MANU_MO_K4"' value ="1">
-    <input type="hidden" name='"M_MANU_DONG_K4"' value ="0">
-  </p>
-</form>
-<!-- AWP_In_Variable Name='"M_MANU_DONG_K5"' -->
-<!-- AWP_In_Variable Name='"M_MANU_MO_K5"' -->
-<br> Coolpad Fan
-<form>
-  <p>
-    <input type="submit" value="START">
-    <input type="hidden" name='"M_MANU_DONG_K5"' value ="1">
-    <input type="hidden" name='"M_MANU_MO_K5"' value ="0">
-  </p>
-</form>
-<form>
-  <p>
-    <input type="submit" value="STOP">
-    <input type="hidden" name='"M_MANU_MO_K5"' value ="1">
-    <input type="hidden" name='"M_MANU_DONG_K5"' value ="0">
-  </p>
-</form>
-</fieldset>
-<h2>SETTING</h2>
-<form>
-<fieldset>
-  <legend>Set Time To Use Fog System</legend>
-  Time 1
-    <p> 
-<!-- AWP_In_Variable Name='"SET_HOUR_PHUN_SUONG_1"' -->
+
+</head>
+
+<body>
+  <h1>GREENHOUSE</h1>
+  <h2>SCREEN</h2>
+  <input type="text" id="ptag" />
+  <button onclick="navigate()">Navigate</button>
+  <fieldset>
+    <legend>System</legend>
+    <!-- AWP_In_Variable Name='"M_START"' -->
+    <form>
+      <p>
+        <input type="submit" onclick="batden1()" value="START">
+        <input type="hidden" name='"M_START"' value="1">
+        <input type="hidden" name='"M_START"' value="0">
+      </p>
+    </form>
+    <!-- AWP_In_Variable Name='"M_STOP"' -->
+    <form>
+      <p>
+        <input type="submit" value="STOP">
+        <input type="hidden" name='"M_STOP"' value="1">
+        <input type="hidden" name='"M_STOP"' value="0">
+      </p>
+    </form>
+    <!-- AWP_In_Variable Name='"M_E_STOP"' -->
+    <form>
+      <p>
+        <input type="submit" value="EMERGENCY STOP">
+        <input type="hidden" name='"M_E_STOP"' value="1">
+      </p>
+    </form>
+    <form>
+      <p>
+        <input type="submit" value="RESET EMERGENCY STOP">
+        <input type="hidden" name='"M_E_STOP"' value="0">
+      </p>
+    </form>
+  </fieldset>
+  <fieldset>
+    <legend>Mode</legend>
+    <!-- AWP_In_Variable Name='"M_MANU"' -->
+    <form>
+      <p>
+        <input type="submit" value="AUTO">
+        <input type="hidden" name='"M_MANU"' value="0">
+      </p>
+    </form>
+    <form>
+      <p>
+        <input type="submit" value="MANUAL">
+        <input type="hidden" name='"M_MANU"' value="1">
+      </p>
+    </form>
+  </fieldset>
+  <fieldset>
+    <legend>Manual</legend>
+    <!-- AWP_In_Variable Name='"M_MANU_DONG_K0"' -->
+    <!-- AWP_In_Variable Name='"M_MANU_MO_K0"' -->
+    Light
+    <form>
+      <p>
+        <input type="submit" value="START">
+        <input type="hidden" name='"M_MANU_DONG_K0"' value="1">
+        <input type="hidden" name='"M_MANU_MO_K0"' value="0">
+      </p>
+    </form>
+    <form>
+      <p>
+        <input type="submit" value="STOP">
+        <input type="hidden" name='"M_MANU_MO_K0"' value="1">
+        <input type="hidden" name='"M_MANU_DONG_K0"' value="0">
+      </p>
+    </form>
+    <!-- AWP_In_Variable Name='"M_MANU_DONG_K1"' -->
+    <!-- AWP_In_Variable Name='"M_MANU_MO_K1"' -->
+    <br> Fog System
+    <form>
+      <p>
+        <input type="submit" value="START">
+        <input type="hidden" name='"M_MANU_DONG_K1"' value="1">
+        <input type="hidden" name='"M_MANU_MO_K1"' value="0">
+      </p>
+    </form>
+    <form>
+      <p>
+        <input type="submit" value="STOP">
+        <input type="hidden" name='"M_MANU_MO_K1"' value="1">
+        <input type="hidden" name='"M_MANU_DONG_K1"' value="0">
+      </p>
+    </form>
+    <!-- AWP_In_Variable Name='"M_MANU_DONG_K2"' -->
+    <br> Close sunblock netting system
+    <form>
+      <p>
+        <input type="submit" value="CW MOTOR">
+        <input type="hidden" name='"M_MANU_DONG_K2"' value="1">
+        <input type="hidden" name='"M_MANU_DONG_K2"' value="0">
+      </p>
+    </form>
+    <!-- AWP_In_Variable Name='"M_MANU_DONG_K3"' -->
+    <br> Open sunblock netting system
+    <form>
+      <p>
+        <input type="submit" value="CCW MOTOR">
+        <input type="hidden" name='"M_MANU_DONG_K3"' value="1">
+        <input type="hidden" name='"M_MANU_DONG_K3"' value="0">
+      </p>
+    </form>
+    <!-- AWP_In_Variable Name='"M_MANU_DONG_K4"' -->
+    <!-- AWP_In_Variable Name='"M_MANU_MO_K4"' -->
+    <br> Ventilation Door And Fan
+    <form>
+      <p>
+        <input type="submit" value="START">
+        <input type="hidden" name='"M_MANU_DONG_K4"' value="1">
+        <input type="hidden" name='"M_MANU_MO_K4"' value="0">
+      </p>
+    </form>
+    <form>
+      <p>
+        <input type="submit" value="STOP">
+        <input type="hidden" name='"M_MANU_MO_K4"' value="1">
+        <input type="hidden" name='"M_MANU_DONG_K4"' value="0">
+      </p>
+    </form>
+    <!-- AWP_In_Variable Name='"M_MANU_DONG_K5"' -->
+    <!-- AWP_In_Variable Name='"M_MANU_MO_K5"' -->
+    <br> Coolpad Fan
+    <form>
+      <p>
+        <input type="submit" value="START">
+        <input type="hidden" name='"M_MANU_DONG_K5"' value="1">
+        <input type="hidden" name='"M_MANU_MO_K5"' value="0">
+      </p>
+    </form>
+    <form>
+      <p>
+        <input type="submit" value="STOP">
+        <input type="hidden" name='"M_MANU_MO_K5"' value="1">
+        <input type="hidden" name='"M_MANU_DONG_K5"' value="0">
+      </p>
+    </form>
+  </fieldset>
+  <h2>SETTING</h2>
+  <form>
+    <fieldset>
+      <legend>Set Time To Use Fog System</legend>
+      Time 1
+      <p>
+        <!-- AWP_In_Variable Name='"SET_HOUR_PHUN_SUONG_1"' -->
         H
         <input type="text" name='"SET_HOUR_PHUN_SUONG_1"'>
-<!-- AWP_In_Variable Name='"SET_MINUTE_PHUN_SUONG_1"' -->
+        <!-- AWP_In_Variable Name='"SET_MINUTE_PHUN_SUONG_1"' -->
         M
         <input type="text" name='"SET_MINUTE_PHUN_SUONG_1"'>
-    </p>  
-    <p>
-<!-- AWP_In_Variable Name='"SET_SO_GIAY_PHUN_SUONG_1"' -->
+      </p>
+      <p>
+        <!-- AWP_In_Variable Name='"SET_SO_GIAY_PHUN_SUONG_1"' -->
         S
         <input type="text" name='"SET_SO_GIAY_PHUN_SUONG_1"'>
-    </p>
-  Time 2
-    <p> 
-<!-- AWP_In_Variable Name='"SET_HOUR_PHUN_SUONG_2"' -->
+      </p>
+      Time 2
+      <p>
+        <!-- AWP_In_Variable Name='"SET_HOUR_PHUN_SUONG_2"' -->
         H
         <input type="text" name='"SET_HOUR_PHUN_SUONG_2"'>
-<!-- AWP_In_Variable Name='"SET_MINUTE_PHUN_SUONG_2"' -->
+        <!-- AWP_In_Variable Name='"SET_MINUTE_PHUN_SUONG_2"' -->
         M
         <input type="text" name='"SET_MINUTE_PHUN_SUONG_2"'>
-    </p>  
-    <p>
-<!-- AWP_In_Variable Name='"SET_SO_GIAY_PHUN_SUONG_2"' -->
+      </p>
+      <p>
+        <!-- AWP_In_Variable Name='"SET_SO_GIAY_PHUN_SUONG_2"' -->
         S
         <input type="text" name='"SET_SO_GIAY_PHUN_SUONG_2"'>
-    </p>
-  Time 3
-    <p>
-<!-- AWP_In_Variable Name='"SET_HOUR_PHUN_SUONG_3"' -->
+      </p>
+      Time 3
+      <p>
+        <!-- AWP_In_Variable Name='"SET_HOUR_PHUN_SUONG_3"' -->
         H
         <input type="text" name='"SET_HOUR_PHUN_SUONG_3"'>
-<!-- AWP_In_Variable Name='"SET_MINUTE_PHUN_SUONG_3"' --> 
+        <!-- AWP_In_Variable Name='"SET_MINUTE_PHUN_SUONG_3"' -->
         M
         <input type="text" name='"SET_MINUTE_PHUN_SUONG_3"'>
-    </p> 
-    <p>
-<!-- AWP_In_Variable Name='"SET_SO_GIAY_PHUN_SUONG_3"' -->
+      </p>
+      <p>
+        <!-- AWP_In_Variable Name='"SET_SO_GIAY_PHUN_SUONG_3"' -->
         S
         <input type="text" name='"SET_SO_GIAY_PHUN_SUONG_3"'>
-    </p>   
-</fieldset>
-<fieldset>
-    <legend>Set Time To Use Sunblock Netting System</legend>
-    Close
-    <p> 
-<!-- AWP_In_Variable Name='"SET_HOUR_DONG_LUOI_CAT_NANG"' -->
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Set Time To Use Sunblock Netting System</legend>
+      Close
+      <p>
+        <!-- AWP_In_Variable Name='"SET_HOUR_DONG_LUOI_CAT_NANG"' -->
         H
         <input type="text" name='"SET_HOUR_DONG_LUOI_CAT_NANG"'>
-<!-- AWP_In_Variable Name='"SET_MINUTE_DONG_LUOI_CAT_NANG"' -->
+        <!-- AWP_In_Variable Name='"SET_MINUTE_DONG_LUOI_CAT_NANG"' -->
         M
         <input type="text" name='"SET_MINUTE_DONG_LUOI_CAT_NANG"'>
-    </p>
-    Open
-    <p> 
-<!-- AWP_In_Variable Name='"SET_HOUR_MO_LUOI_CAT_NANG"' -->
+      </p>
+      Open
+      <p>
+        <!-- AWP_In_Variable Name='"SET_HOUR_MO_LUOI_CAT_NANG"' -->
         H
         <input type="text" name='"SET_HOUR_MO_LUOI_CAT_NANG"'>
-<!-- AWP_In_Variable Name='"SET_MINUTE_MO_LUOI_CAT_NANG"' -->
+        <!-- AWP_In_Variable Name='"SET_MINUTE_MO_LUOI_CAT_NANG"' -->
         M
         <input type="text" name='"SET_MINUTE_MO_LUOI_CAT_NANG"'>
-    </p>
-</fieldset>
-<fieldset>
-    <legend>Set Time To Use Light</legend>
-    Open
-    <p> 
-<!-- AWP_In_Variable Name='"SET_HOUR_MO_DEN"' -->
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Set Time To Use Light</legend>
+      Open
+      <p>
+        <!-- AWP_In_Variable Name='"SET_HOUR_MO_DEN"' -->
         H
         <input type="text" name='"SET_HOUR_MO_DEN"'>
-<!-- AWP_In_Variable Name='"SET_MINUTE_MO_DEN"' -->
+        <!-- AWP_In_Variable Name='"SET_MINUTE_MO_DEN"' -->
         M
         <input type="text" name='"SET_MINUTE_MO_DEN"'>
-    </p>
-    Close
-    <p> 
-<!-- AWP_In_Variable Name='"SET_HOUR_TAT_DEN"' -->
+      </p>
+      Close
+      <p>
+        <!-- AWP_In_Variable Name='"SET_HOUR_TAT_DEN"' -->
         H
         <input type="text" name='"SET_HOUR_TAT_DEN"'>
-<!-- AWP_In_Variable Name='"SET_MINUTE_TAT_DEN"' -->
+        <!-- AWP_In_Variable Name='"SET_MINUTE_TAT_DEN"' -->
         M
         <input type="text" name='"SET_MINUTE_TAT_DEN"'>
-    </p>
-</fieldset>
-<fieldset>
-    <legend>Set Temperature To Operate Auto Mode</legend>
-<!-- AWP_In_Variable Name='"SET_MAX_NHIET_DO"' -->
-    Temperature Max
-    <p> 
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Set Temperature To Operate Auto Mode</legend>
+      <!-- AWP_In_Variable Name='"SET_MAX_NHIET_DO"' -->
+      Temperature Max
+      <p>
         <input type="text" name='"SET_MAX_NHIET_DO"'>
-    </p>
-<!-- AWP_In_Variable Name='"SET_MIN_NHIET_DO"' -->
-    Temperature Min
-    <p> 
+      </p>
+      <!-- AWP_In_Variable Name='"SET_MIN_NHIET_DO"' -->
+      Temperature Min
+      <p>
         <input type="text" name='"SET_MIN_NHIET_DO"'>
-    </p>
-<!-- AWP_In_Variable Name='"SET_SO_GIAY_MO_DEN"' -->
-    Plus Time To Use Light
-    <p> 
+      </p>
+      <!-- AWP_In_Variable Name='"SET_SO_GIAY_MO_DEN"' -->
+      Plus Time To Use Light
+      <p>
         <input type="text" name='"SET_SO_GIAY_MO_DEN"'>
-    </p>
-<!-- AWP_In_Variable Name='"SET_SO_GIAY_CHAY_COOLPAD_VA_QUAT"' -->
-    After Time To Use Fog System
-    <p> 
+      </p>
+      <!-- AWP_In_Variable Name='"SET_SO_GIAY_CHAY_COOLPAD_VA_QUAT"' -->
+      After Time To Use Fog System
+      <p>
         <input type="text" name='"SET_SO_GIAY_CHAY_COOLPAD_VA_QUAT"'>
-    </p>
-    <input type="submit" value="SET">
-</fieldset>
-</form>
-<script src="index.js"></script>
- </body>  
- </html>
+      </p>
+      <input type="submit" value="SET">
+    </fieldset>
+  </form>
+  <script src="index.js"></script>
+</body>
+
+</html>
