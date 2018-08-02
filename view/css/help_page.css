@@ -51,3 +51,27 @@
     padding-left:32px;
     padding-right: 32px;
 }
+
+.FAB-button{
+    position:fixed;
+    z-index: 1000;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#007bff;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.col-md-6.border-panel{
+    margin-top: 28px;
+    
+}
+
+.col-md-6.border-panel legend{
+    margin-top:12px;
+    text-align: center
+}
