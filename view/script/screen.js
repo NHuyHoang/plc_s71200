@@ -8,3 +8,14 @@ function change_video(numb) {
     }
     source.src = video_source;
 }
+
+function reqListener () {
+    console.log(this.responseText);
+  }
+
+function send_request() {
+    var oReq = new XMLHttpRequest();
+    oReq.addEventListener("load", reqListener);
+    oReq.open("GET", '/view/screen.html?"M_START"=1&"M_START"=0');
+    oReq.send();
+}

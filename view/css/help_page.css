@@ -66,12 +66,12 @@
 	box-shadow: 2px 2px 3px #999;
 }
 
-.col-md-6.border-panel{
-    margin-top: 28px;
+.col-md-6 .border-panel{
+    margin:12px;
+    padding:12px;
     
 }
 
-.col-md-6.border-panel legend{
-    margin-top:12px;
+.col-md-6 .border-panel legend{
     text-align: center
 }

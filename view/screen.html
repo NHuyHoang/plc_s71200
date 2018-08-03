@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="../css//bootstrap.min.css"> -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/help_page.css">
     <title>Home page</title>
 </head>
 
@@ -39,11 +40,64 @@
         </div>
     </nav>
     <div class="container">
-        <button onclick="change_video(2)">Video 1</button>
-        <button onclick="change_video(3)">Video 2</button>
-        <video id="source_video" width="500" height="300" src="./public/videos/1.mp4" controls>
+        <div class="row justify-content-md-center">
+            <div class="col-md-6">
+                <div class="border-panel">
+                    <div class="row">
+                        <div class="col">
+                            <!-- AWP_In_Variable Name='"M_START"' -->
+                            <input onclick="send_request()" class="btn btn-success btn-block" type="submit" onclick="batden1()" value="START">
+                            <form>
+                                <input class="btn btn-outline-success btn-block" type="submit" onclick="batden1()" value="START">
+                                <input type="hidden" name='"M_START"' value="1">
+                                <input type="hidden" name='"M_START"' value="0">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <!-- AWP_In_Variable Name='"M_STOP"' -->
+                            <form>
+                                <input class="btn btn-outline-danger btn-block" type="submit" value="STOP">
+                                <input type="hidden" name='"M_STOP"' value="1">
+                                <input type="hidden" name='"M_STOP"' value="0">
+                            </form>
+                        </div>
+                    </div>
 
-        </video>
+                    <div class="row">
+                        <!-- AWP_In_Variable Name='"M_MANU"' -->
+                        <div class="col">
+                            <form>
+                                <input class="btn btn-outline-warning btn-block" type="submit" value="AUTO">
+                                <input type="hidden" name='"M_MANU"' value="0">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form>
+                                <input class="btn btn-outline-warning btn-block" type="submit" value="MANUAL">
+                                <input type="hidden" name='"M_MANU"' value="1">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- AWP_In_Variable Name='"M_E_STOP"' -->
+                        <div class="col">
+                            <form>
+                                <input type="submit" value="EMERGENCY STOP">
+                                <input type="hidden" name='"M_E_STOP"' value="1">
+                            </form>
+                        </div>
+                        <div class="col">
+                            <form>
+                                <input type="submit" value="RESET EMERGENCY STOP">
+                                <input type="hidden" name='"M_E_STOP"' value="0">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -57,3 +111,9 @@
 </body>
 
 </html>
+
+
+
+<!-- <button onclick="change_video(2)">Video 1</button>
+<button onclick="change_video(3)">Video 2</button>
+<video id="source_video" width="500" height="300" src="./public/videos/1.mp4" controls/> -->
