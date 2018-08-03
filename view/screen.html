@@ -43,6 +43,7 @@
         <div class="row justify-content-md-center">
             <div class="col-md-6">
                 <div class="border-panel">
+                    <legend>Control System</legend>
                     <div class="row" style="height: 22px;"></div>
                     <div class="row">
                         <div class="col">
@@ -52,14 +53,14 @@
                         </div>
                         <div class="col">
                             <!-- AWP_In_Variable Name='"M_STOP"' -->
-                            <input id="stop_btn" onclick="send_request('stop')" class="btn btn-outline-danger btn-block" type="submit" value="STOP">
+                            <input id="stop_btn" onclick="send_request('stop')" class="btn btn-danger btn-block" type="submit" value="STOP">
                         </div>
                     </div>
                     <div class="row" style="height: 22px;"></div>
                     <div class="row">
                         <!-- AWP_In_Variable Name='"M_MANU"' -->
                         <div class="col">
-                            <input id="auto_btn" onclick="send_request('auto')" class="btn btn-outline-warning btn-block" type="submit" value="AUTO">
+                            <input id="auto_btn" onclick="send_request('auto')" class="btn btn-warning btn-block" type="submit" value="AUTO">
                         </div>
                         <div class="col">
                             <input id="manual_btn" onclick="send_request('manual')" class="btn btn-outline-warning btn-block" type="submit" value="MANUAL">
@@ -77,7 +78,80 @@
                     <div class="row" style="height: 22px;"></div>
                 </div>
             </div>
+        </div>
 
+        <div class="row justify-content-md-center">
+            <div class="col-md-6">
+                <div class="border-panel">
+                    <legend>Manual</legend>
+                    <div class="row" style="height: 22px;"></div>
+
+                    <!-- AWP_In_Variable Name='"M_MANU_DONG_K0"' -->
+                    <!-- AWP_In_Variable Name='"M_MANU_MO_K0"' -->
+                    <div class="row">
+                        <div class="col">
+                            <input id="light_on" onclick="send_request('light_on')" class="btn btn-outline-success btn-block" type="submit" onclick="batden1()"
+                                value="Turn-on light">
+                        </div>
+                        <div class="col">
+                            <input id="light_off" onclick="send_request('light_off')" class="btn btn-danger btn-block" type="submit" value="Turn-off light">
+                        </div>
+                    </div>
+                    <div class="row" style="height: 22px;"></div>
+
+                    <!-- AWP_In_Variable Name='"M_MANU_DONG_K1"' -->
+                    <!-- AWP_In_Variable Name='"M_MANU_MO_K1"' -->
+                    <div class="row">
+                        <div class="col">
+                            <input id="fog_on" onclick="send_request('fog_on')" class="btn btn-outline-success btn-block" type="submit" onclick="batden1()"
+                                value="Turn-on fog">
+                        </div>
+                        <div class="col">
+                            <input id="fog_off" onclick="send_request('fog_off')" class="btn btn-danger btn-block" type="submit" value="Turn-off fog">
+                        </div>
+                    </div>
+                    <div class="row" style="height: 22px;"></div>
+
+                    <!-- AWP_In_Variable Name='"M_MANU_DONG_K2"' -->
+                    <!-- AWP_In_Variable Name='"M_MANU_DONG_K3"' -->
+                    <div class="row">
+                        <div class="col">
+                            <input id="sun_close" onclick="send_request('sun_close')" class="btn btn-outline-success btn-block" type="submit" onclick="batden1()"
+                                value="Close sunblock netting">
+                        </div>
+                        <div class="col">
+                            <input id="sun_open" onclick="send_request('sun_open')" class="btn btn-danger btn-block" type="submit" value="Open sunblock netting">
+                        </div>
+                    </div>
+                    <div class="row" style="height: 22px;"></div>
+
+                    <!-- AWP_In_Variable Name='"M_MANU_DONG_K4"' -->
+                    <!-- AWP_In_Variable Name='"M_MANU_MO_K4"' -->
+                    <div class="row">
+                        <div class="col">
+                            <input id="door_open" onclick="send_request('door_open')" class="btn btn-outline-success btn-block" type="submit" onclick="batden1()"
+                                value="Open door and fan">
+                        </div>
+                        <div class="col">
+                            <input id="door_close" onclick="send_request('door_close')" class="btn btn-danger btn-block" type="submit" value="Close door and fan">
+                        </div>
+                    </div>
+                    <div class="row" style="height: 22px;"></div>
+
+                    <!-- AWP_In_Variable Name='"M_MANU_DONG_K5"' -->
+                    <!-- AWP_In_Variable Name='"M_MANU_MO_K5"' -->
+                    <div class="row">
+                        <div class="col">
+                            <input id="coolpad_open" onclick="send_request('coolpad_open')" class="btn btn-outline-success btn-block" type="submit" onclick="batden1()"
+                                value="Open coolpad fan">
+                        </div>
+                        <div class="col">
+                            <input id="coolpad_close" onclick="send_request('coolpad_close')" class="btn btn-danger btn-block" type="submit" value="Close coolpad fan">
+                        </div>
+                    </div>
+                    <div class="row" style="height: 22px;"></div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
