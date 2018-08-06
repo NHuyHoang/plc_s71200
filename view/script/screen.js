@@ -119,7 +119,7 @@ function checkManual(command, command1, command2, memory) {
 function send_request(command) {
     var oReq = new XMLHttpRequest();
     var url = "";
-    var prefix = "/view";
+    var prefix = "/awp";
 
     oReq.addEventListener("load", function () { });
     switch (command) {
@@ -148,36 +148,9 @@ function send_request(command) {
 
     if (command === 'light_on' || command === 'light_off') isLightOn = checkManual(command, 'light_on', 'light_off', isLightOn);
     if (command === 'fog_on' || command === 'fog_off') isFogOn = checkManual(command, 'fog_on', 'fog_off', isFogOn);
-    if (command === 'sun_close' || command === 'sun_open') isSunClose = checkManual(command, 'sun_close', 'sun_open', isSunClose);
+    //if (command === 'sun_close' || command === 'sun_open') isSunClose = checkManual(command, 'sun_close', 'sun_open', isSunClose);
     if (command === 'door_open' || command === 'door_close') isDoorOpen = checkManual(command, 'door_open', 'door_close', isDoorOpen);
     if (command === 'coolpad_open' || command === 'coolpad_close') isCoolPadOpen = checkManual(command, 'coolpad_open', 'coolpad_close', isCoolPadOpen);
-
-    if (!makeRequest) return;
-
-    url = prefix + url;
-    oReq.open("GET", url);
-    console.log(url);
-    oReq.send();
-}
-
-
-function send_request1(command) {
-    var oReq = new XMLHttpRequest();
-    var url = "";
-    var prefix = "/view";
-
-    oReq.addEventListener("load", function () { });
-    switch (command) {
-        case 'light_on': url = '/screen.html?"M_MANU_DONG_K0"=1&"M_MANU_MO_K0"=0'; break;
-        case 'light_off': url = '/screen.html?"M_MANU_MO_K0"=1&"M_MANU_DONG_K0"=0'; break;
-        case 'auto': url = '/screen.html?"M_MANU"=0'; break;
-        case 'manual': url = '/screen.html?"M_MANU"=1'; break;
-        case 'emergency': url = getEmergencyUrl(); break;
-    }
-
-    var makeRequest = true;
-    if (command === 'start' || command === 'stop') makeRequest = checkStart(command);
-    if (command === 'auto' || command === 'manual') makeRequest = checkAuto(command);
 
     if (!makeRequest) return;
 
